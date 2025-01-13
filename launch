@@ -1,6 +1,8 @@
 #!/bin/sh
 
+export ROOT=$(readlink -f  $(dirname $))
+
 source venv/bin/activate
-jupyter-notebook BuildingLFRic.ipynb
+jupyter-notebook
 deactivate
 
