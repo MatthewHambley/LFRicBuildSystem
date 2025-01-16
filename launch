@@ -1,6 +1,6 @@
 #!/bin/sh
 
-export ROOT=$(readlink -f  $(dirname $))
+export ROOT=$(readlink -f  $(dirname $0))
 
 source venv/bin/activate
 jupyter-notebook
